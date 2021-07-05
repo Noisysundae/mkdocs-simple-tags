@@ -68,7 +68,7 @@ class SimpleTagsPlugin(BasePlugin):
             path=str(self.tags_filename),
             src_dir=str(self.tags_folder),
             dest_dir=config["site_dir"],
-            use_directory_urls=True
+            use_directory_urls=config["use_directory_urls"]
         )
         files.append(newfile)
 
